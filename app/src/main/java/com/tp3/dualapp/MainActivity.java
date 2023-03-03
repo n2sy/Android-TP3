@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
     //public static final String EXTRA_MESSAGE ="";
     private EditText msgTxt;
-    private TextView headerMsg;
     private TextView reponseMsg;
 
     @Override
@@ -28,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         msgTxt = (EditText) findViewById(R.id.txt1);
 
-        headerMsg = (TextView) findViewById(R.id.text_header);
         reponseMsg = (TextView) findViewById(R.id.text_message);
 
     }
@@ -41,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == 25) {
             if (resultCode == RESULT_OK) {
                 String reply = i.getStringExtra("messageRep");
-                headerMsg.setVisibility(View.VISIBLE);
                 reponseMsg.setVisibility(View.VISIBLE);
                 reponseMsg.setText(reply);
             } else { //resultCode == RESULT_CANCELED

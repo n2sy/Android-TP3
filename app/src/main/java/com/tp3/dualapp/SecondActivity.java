@@ -24,7 +24,7 @@ public class SecondActivity extends AppCompatActivity {
 
          i = getIntent();
         String message = i.getStringExtra("message");
-        txt1.setVisibility(View.VISIBLE);
+     //   txt1.setVisibility(View.VISIBLE);
         txt1.setText(message);
 
     }
