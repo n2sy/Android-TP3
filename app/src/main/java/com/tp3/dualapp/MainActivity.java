@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent i) {
         super.onActivityResult(requestCode, resultCode, i);
 
-        if (requestCode == 25) {
+        if (requestCode == 3) {
             if (resultCode == RESULT_OK) {
                 String reply = i.getStringExtra("messageRep");
                 reponseMsg.setVisibility(View.VISIBLE);
@@ -47,11 +47,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
     public void LaunchActivity(View v) {
         Intent i = new Intent(this, SecondActivity.class);
         String msg = msgTxt.getText().toString();
         i.putExtra("message", msg);
-        startActivityForResult(i, 25);
+        startActivityForResult(i, 3);
 
     }
 

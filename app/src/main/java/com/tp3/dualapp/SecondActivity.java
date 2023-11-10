@@ -22,9 +22,9 @@ public class SecondActivity extends AppCompatActivity {
         txt1 = (TextView) findViewById(R.id.text_message);
 
 
-         i = getIntent();
+        i = getIntent();
         String message = i.getStringExtra("message");
-     //   txt1.setVisibility(View.VISIBLE);
+        txt1.setVisibility(View.VISIBLE);
         txt1.setText(message);
 
     }

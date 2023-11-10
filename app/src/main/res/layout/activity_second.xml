@@ -28,14 +28,14 @@
         android:visibility="invisible" />
 
     <Button
+        android:id="@+id/button_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reply"
-        android:id="@+id/button_second"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="LaunchReply"/>
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="LaunchReply"
+        android:text="Reply" />
 
     <EditText
         android:id="@+id/editText_second"
